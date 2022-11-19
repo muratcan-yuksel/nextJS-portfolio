@@ -5,12 +5,12 @@ type Props = {};
 
 const Hero = (props: Props) => {
   const [text, count] = useTypewriter({
-    loop: true,
     words: ["Web Developer", "Software Engineer", "Full Stack Developer"],
+    loop: true,
     delaySpeed: 2000,
   });
   return (
-    <div>
+    <div className=" h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
       <h1>
         <span> {text} </span>
