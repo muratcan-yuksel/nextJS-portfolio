@@ -1,16 +1,26 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import Header from "../components/Header";
+// import styles from "../styles/Home.module.css";
+import Hero from "../components/Hero";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className="bg-[rgb(36,36,36)] text-white h-screen">
       <Head>
         <title>NextJS Portfolio</title>
       </Head>
-      <h2 className="text-red-500">hey</h2>
-      <h2 className="text-red-500">hey</h2>{" "}
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <Header />
+
+      {/*Hero  */}
+      <section id="hero">
+        <Hero />
+      </section>
+      {/*About */}
+      {/* Experience */}
+      {/* Skills */}
+      {/* Projects */}
+      {/* Contact Me */}
     </div>
   );
 }
