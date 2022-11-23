@@ -6,7 +6,12 @@ type Props = {};
 
 const About = (props: Props) => {
   return (
-    <div className="h-screen flex flez-col relative text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1.5 }}
+      className="h-screen flex flex-col relative text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center"
+    >
       {/* "tracking" gives space between letters of the word */}
       <h3 className="absolute top-24 upercase tracking-[20px] text-gray-500 text-2xl">
         About
@@ -39,7 +44,7 @@ const About = (props: Props) => {
           mollitia eum accusantium omnis. Quis laborum eos iste illo at!
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
