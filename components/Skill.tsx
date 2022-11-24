@@ -10,6 +10,7 @@ type Props = {
 const Skill = ({ directionLeft }: Props) => {
   return (
     <div className="group relative flex cursor-pointer">
+      {/* this animation is problematic on mobile */}
       <motion.div
         initial={{ x: directionLeft ? -200 : 200, opacity: 0 }}
         transition={{ duration: 1 }}
