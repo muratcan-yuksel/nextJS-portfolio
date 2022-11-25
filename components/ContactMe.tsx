@@ -47,27 +47,27 @@ const ContactMe = ({}: Props) => {
         >
           <div className="flex space-x-2">
             <input
-              {...register("name", { required: true })}
+              {...register("name")}
               placeholder="Name"
               className="contactInput"
               type="text"
             />
             <input
-              {...register("email", { required: true })}
+              {...register("email")}
               placeholder="Email"
               className="contactInput"
               type="email"
             />
           </div>
           <input
-            {...register("subject", { required: true })}
+            {...register("subject")}
             placeholder="Subject"
             className="contactInput"
             type="text"
           />
 
           <textarea
-            {...register("message", { required: true })}
+            {...register("message")}
             placeholder="Message"
             className="contactInput"
             name=""
