@@ -17,7 +17,7 @@ const Projects = (props: Props) => {
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         Projects
       </h3>
-      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20">
+      <div className="relative top-36 w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20">
         {/* projects */}
         {projects.map((project, index) => (
           <div

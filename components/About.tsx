@@ -13,7 +13,7 @@ const About = (props: Props) => {
       className="h-screen flex flex-col relative text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center"
     >
       {/* "tracking" gives space between letters of the word */}
-      <h3 className="absolute top-24 upercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute top-10 md:top-24 upercase tracking-[20px] text-gray-500 text-2xl">
         About
       </h3>
       {/*check how to add image to motion.img */}
