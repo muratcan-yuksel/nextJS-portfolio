@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import About from "../components/About";
 import ContactMe from "../components/ContactMe";
 import Header from "../components/Header";
@@ -22,29 +23,39 @@ export default function Home() {
       <Header />
 
       {/*Hero  */}
-      <section id="hero">
+      <section id="hero" className="snap-center">
         <Hero />
       </section>
       {/*About */}
-      <section id="about">
+      <section id="about" className="snap-center">
         <About />
       </section>
       {/* Experience */}
-      <section id="experience">
+      <section id="experience" className="snap-center">
         <WorkExperience />
       </section>
       {/* Skills */}
-      <section id="skills">
+      <section id="skills" className="snap-start">
         <Skills />
       </section>
       {/* Projects */}
-      <section id="projects">
+      <section id="projects" className="snap-start">
         <Projects />
       </section>
       {/* Contact Me */}
-      <section id="contact">
+      <section id="contact" className="snap-start">
         <ContactMe />
       </section>
+      {/* sticky footer */}
+
+      {/* <Link href="#hero">
+      <footer className="sticky bottom-5 w-full cursor-pointer">
+        <div className="flex items-center justify-center">
+      an image here
+          <img src="" alt="" />
+        </div>
+      </footer>
+      </Link> */}
     </div>
   );
 }
